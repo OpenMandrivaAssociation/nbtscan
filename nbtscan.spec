@@ -1,7 +1,7 @@
 Summary:	Tool to gather NetBIOS info from Windows networks
 Name:		nbtscan
 Version:	1.5.1
-Release:	%mkrel 1
+Release:	%mkrel 3
 Group:		Networking/Other
 License:	GPL
 URL:		http://www.inetcat.net/software/nbtscan.html
