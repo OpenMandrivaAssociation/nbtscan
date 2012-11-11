@@ -1,0 +1,21 @@
+--- nbtscan-1.5.1a/Makefile.in.orig	2007-05-05 21:14:22.000000000 +0200
++++ nbtscan-1.5.1a/Makefile.in	2007-05-05 21:15:00.000000000 +0200
+@@ -6,6 +6,9 @@ OBJECTS=nbtscan.o statusq.o range.o list
+ DEFS=@DEFS@
+ TARGET=@TARGET@
+ 
++#for Fedora
++DESTDIR=
++
+ prefix      = @prefix@
+ exec_prefix = @exec_prefix@
+ BINDIR      = @bindir@
+@@ -14,7 +17,7 @@ nbtscan: $(OBJECTS)
+ 	$(CC) $(CFLAGS) -o nbtscan $(OBJECTS) $(LIBS)
+ 
+ install:
+-	$(INSTALL) $(TARGET) $(BINDIR)/$(TARGET)
++	$(INSTALL) -D $(TARGET) $(DESTDIR)$(BINDIR)/$(TARGET)
+ 
+ nbtscan.o: nbtscan.c statusq.h range.h list.h
+ 	$(CC) $(CFLAGS) $(DEFS) -c nbtscan.c
