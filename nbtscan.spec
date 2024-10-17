@@ -4,7 +4,7 @@ Version:	1.5.1
 Release:	6
 Group:		Networking/Other
 License:	GPL
-URL:		http://www.inetcat.net/software/nbtscan.html
+URL:		https://www.inetcat.net/software/nbtscan.html
 Source0:	http://www.inetcat.net/software/%{name}-%{version}.tar.gz
 #add $DESTDIR to make install
 Patch0:		nbtscan-1.5.1-makefile.patch
